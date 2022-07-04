@@ -4,8 +4,8 @@ import { OrbitControls, useGLTF } from "@react-three/drei";
 import "./App.css";
 
 function Model(props) {
-  const { scene } = useGLTF("/P1.glb");
-  return <primitive object={scene} />;
+  const { scene } = useGLTF("/P1.glb");             //uploading the file from loacl directory to the scene var using useGLTF
+  return <primitive object={scene} />;              // to upload file to local directory we can use multor
 }
 
 export default function App() {
